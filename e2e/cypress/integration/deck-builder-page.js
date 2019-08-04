@@ -6,6 +6,7 @@ describe('Deck builder page', () => {
     cy.get('[data-cy="header"]').should('be.visible');
     cy.get('[data-cy="cardList"]').should('be.visible');
     cy.get('[data-cy="deckInProgress"]').should('be.visible');
+    cy.get('[data-cy="factionFilter"]').should('be.visible');
     cy.get('[data-cy="cardListCard"]:first').click();
     cy.get('[data-cy="deckInProgress"]').should('be.visible');
     cy.get('[data-cy="deckInProgress"] [data-cy="cardListCard"]').should(
